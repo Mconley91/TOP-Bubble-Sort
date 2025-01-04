@@ -21,7 +21,7 @@ def bubble_sorter(input_array)
           container_variable = item #current item's value is stored in a third container
           array_as_integers[index] = array_as_integers[index+1] #current item's value is CHANGED to the next index's value (a lower value)
           array_as_integers[index+1] = container_variable #the NEXT index's value is CHANGED to the third container's value (the current higher value)
-          p "Current Array is: #{array_as_integers}"
+          puts "Current Array is: #{array_as_integers}"
           puts "Is the Array sorted?: #{is_sorted?(array_as_integers) ? "YES!" : "NO!"}"
         end
       end
